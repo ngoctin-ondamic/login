@@ -15,7 +15,6 @@ const LoginPage = () => {
     }
     const handleOnClick = (event : React.MouseEvent) => {
         if(event.currentTarget.getAttribute('name') === 'login'){
-            // useNavigate 
             authService.login(username,password)
             .then(response => {
                 if(response.id !== 0){
